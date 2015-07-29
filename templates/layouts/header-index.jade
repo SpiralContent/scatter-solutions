@@ -1,0 +1,46 @@
+doctype html(lang='en')
+head
+	meta(charset='UTF-8')
+	title Scatter
+	link(rel='shortcut icon', type='image/x-icon', href='/images/scatter-favicon.ico')
+	meta(name='viewport', content='width=device-width, initial-scale=1,user-scalable=no')
+	link(rel='stylesheet', href='/css/bootstrap.min.css')
+	link(rel='stylesheet', href='/css/fonts/stylesheet.css')
+	link(rel='stylesheet', href='/css/scatter.css')
+body
+	link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css')
+	#hero.hero.hero__homepage
+		.hero-a
+			.header.header-trans
+				.container
+					.row
+						.col-md-4
+							button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='.bs-navbar-collapse')
+								img(src='/images/i-menu.png', alt='')
+							a.logo(href='/')
+								img(src='/images/scatter-light.png', alt='Scatter-logo')
+						.col-md-8
+							.collapse.bs-navbar-collapse
+								ul.links
+									li
+										a(href='/advertisers') advertisers
+									li
+										a(href='/publishers') publishers
+									li
+										a(href='/knowledge') knowledge
+									li
+										a(href='#contact') contact
+									li
+										a(href='/keystone/signin', style='margin-right: 5px').btn.btn-lg.btn-primary Sign in
+			.container
+				.hero-content.tac
+					h1.hd-1.mt Awesome content.  
+		.hero-b.tac
+			h2.hd-1 No more awful conversations.
+			.breathe
+				img(src='/images/hero-scatter-logo.png', alt='')
+			div
+				a.btn.btn-tertiary(href='#contact') request a demo
+			.hidden-xs.skip.tac
+				a(href='#content')
+					img(src='/images/i-arrow.png', alt='')

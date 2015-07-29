@@ -1,0 +1,195 @@
+doctype html
+html(lang="en")
+head
+	meta(charset='UTF-8')
+	title Scatter
+	link(rel='shortcut icon', type='image/x-icon', href='/images/scatter-favicon.ico')
+	meta(name='viewport', content='width=device-width, initial-scale=1,user-scalable=no')
+	link(rel='stylesheet', href='/css/bootstrap.min.css')
+	link(rel='stylesheet', href='/css/fonts/stylesheet.css')
+	link(rel='stylesheet', href='/css/scatter.css')
+body
+	#hero.hero.hero__bg.hero__publishers
+		.hero-a
+			.header.header-trans
+				.container
+					.row
+						.col-md-4
+							button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='.bs-navbar-collapse')
+								img(src='/images/i-menu.png', alt='')
+							a.logo(href='/')
+								img(src='/images/scatter-light.png', alt='Scatter-logo')
+						.col-md-8
+							.collapse.bs-navbar-collapse
+								ul.links
+									li
+										a(href='/advertisers') advertisers
+									li
+										a.active(href='/publishers') publishers
+									li
+										a(href='/knowledge') knowledge
+									li
+										a(href='#contact') contact
+									li
+										a(href='/keystone/signin') Sign in
+			.container
+				.hero-content.tac
+					h1.hd-1.mt your content gets views.
+		.hero-b.tac
+			h2.hd-1 and you get revenues.
+			.breathe
+				img(src='/images/hero-scatter-logo.png', alt='')
+			.hidden-xs.skip.tac
+				a(href='#content')
+					img(src='/images/i-arrow.png', alt='')
+	#content.section
+		.container
+			h2.hd-2.tac How Does Scatter Help Publishers?
+			.row.tac.breathe
+				.col-md-4
+					h3.hd-3 New Revenue Stream
+					img(src='/images/i-revenue.png', alt='')
+					p.brief-text Make your content available to marketers. And make new revenues without adding even a pixel on your content destination.
+				.col-md-4.mb
+					h3.hd-3 Increased Traffic
+					img(src='/images/i-traffic.png', alt='')
+					p.brief-text Creating a brand safe environment will enable marketers push out your content on their owned platforms, thus adding new traffic to your digital assets.
+				.col-md-4.mb
+					h3.hd-3 Improved Social Quotient
+					img(src='/images/i-socialquotient.png', alt='')
+					p.brief-text Your content parading in its own uniform across the social landscape allows it a tremendous boost. Now, up that social quotient!
+			.tac
+				p
+					a.btn.btn-action(target='_blank', href='/files/scatter-publisher-faqs.pdf') Want to know more? 
+						b Download our FAQ
+				p.btn__info PDF Format - 247 KB
+	#publishers.section
+		.container
+			.row
+				.col-md-6.mb
+					.tac.brief-big
+						h3.hd-3 Easy Integration
+						p Integration has never been easier. Two extremely friendly options allow you to make the best decision on what works best in your interest. Once you&apos;ve taken this call, we&rsquo;ll showcase your content to top marketers and create a brand safe link for them.
+				.col-md-6.mb
+					.tac.brief-big
+						h3.hd-3 New Audiences
+						p Go where no publisher has gone before. Scatter&rsquo;s diverse and rich client base will ensure that your content travels - and travels well. Marketers will now see value in distributing this content on their painstakingly built communities.
+			.row
+				.col-md-6.mb
+					.tac.brief-big
+						h3.hd-3 Resurface content
+						p There is a lot of great content you generate, but there is minimal space and time to showcase it. Scatter allows this content to be rediscovered by brands and sampled by very relevant audiences.
+				.col-md-6.mb
+					.tac.brief-big
+						h3.hd-3 Monetize Content
+						p Now make new revenues. And, you don&rsquo;t need to create any new space on your asset to generate these revenues. Scatter ensures this money &ndash; but not at the cost of audiences!
+	.section.section-dark
+		.container.tac
+			.customers.mt.mb
+				a.customer.customer-coca-cola.active(data-cycle-cmd='goto', data-cycle-arg='0')
+				a.customer.customer-starbucks(data-cycle-cmd='goto', data-cycle-arg='1')
+				a.customer.customer-nikon(data-cycle-cmd='goto', data-cycle-arg='2')
+			.testimonials.cycle-slideshow.mb(data-cycle-timeout='0', data-cycle-prev='#prev', data-cycle-next='#next', data-cycle-slides='> .testimonial', data-cycle-pager='.cycle-pager')
+				.testimonial
+					blockquote
+						p.quote &quot;Scatter is an innovative product that adds speed and scale to our plethora of content offering. Given the team&apos;s experience in publishing and our want to stay ahead, we decided to take the plunge in this innovative offering.&quot;
+					p.hd-3 - Club Mahindra
+				.testimonial
+					blockquote
+						p.quote &quot;Arm Digital equips its clients with creative, technology, social, media and brand consulting solutions making them a complete DIGITAL ARM&quot;
+					p.hd-3 - ARM Digital
+				.testimonial
+					blockquote
+						p.quote &quot;Gionee as a brand has taken the perception of smartphones to a different level. It is known for various initiatives, risks and innovations brought to the mobility space&quot;
+					p.hd-3 - Gionee
+	.section.scatter
+		.container.tac
+			h2.hd-2 Our Publisher network
+			p.brief-text Our publisher network is every content marketer&apos;s dream, with content ranging from fashion to technology to business.
+			.publishers-slide.cycle-slideshow(data-cycle-timeout='0', data-cycle-prev='#pub-prev', data-cycle-next='#pub-next', data-cycle-slides='> .publishers-list', data-cycle-swipe='true', data-cycle-swipe-fx='scrollHorz')
+				a#pub-prev.hidden-xs
+					img(src='/images/i-left.png', alt='previous')
+				a#pub-next.hidden-xs
+					img(src='/images/i-right.png', alt='next')
+				.visible-xs
+					p Swipe to see more
+				.row.tac.publishers-list
+					.col-xs-4.col-md-3
+						img.network-logo(src='/images/network-placeholder.png', data-src='/images/logos/1-indianexpress.jpg', alt='1-indianexpress logo')
+					.col-xs-4.col-md-3
+						img.network-logo(src='/images/network-placeholder.png', data-src='/images/logos/2-boldsky.jpg', alt='2-boldsky logo')
+					.col-xs-4.col-md-3
+						img.network-logo(src='/images/network-placeholder.png', data-src='/images/logos/4-desimartini.jpg', alt='4-desimartini logo')
+					.col-xs-4.col-md-3
+						img.network-logo(src='/images/network-placeholder.png', data-src='/images/logos/5-drivespark.jpg', alt='5-drivespark logo')
+					.col-xs-4.col-md-3
+						img.network-logo(src='/images/network-placeholder.png', data-src='/images/logos/6-financialexpress.jpg', alt='6-financialexpress logo')
+					.col-xs-4.col-md-3
+						img.network-logo(src='/images/network-placeholder.png', data-src='/images/logos/7-filmibeat.jpg', alt='7-filmibeat logo')
+					.col-xs-4.col-md-3
+						img.network-logo(src='/images/network-placeholder.png', data-src='/images/logos/8-freepress.jpg', alt='8-freepress logo')
+					.col-xs-4.col-md-3
+						img.network-logo(src='/images/network-placeholder.png', data-src='/images/logos/9-gizbot.jpg', alt='9-gizbot logo')
+					.col-xs-4.col-md-3
+						img.network-logo(src='/images/network-placeholder.png', data-src='/images/logos/10-goodreturns.jpg', alt='10-goodreturns logo')
+					.col-xs-4.col-md-3
+						img.network-logo(src='/images/network-placeholder.png', data-src='/images/logos/11-healthtechnology.jpg', alt='11-healthtechnology logo')
+					.col-xs-4.col-md-3
+						img.network-logo(src='/images/network-placeholder.png', data-src='/images/logos/12-indiabusinessmediareview.jpg', alt='12-indiabusinessmediareview logo')
+					.col-xs-4.col-md-3
+						img.network-logo(src='/images/network-placeholder.png', data-src='/images/logos/13-ibtmedia.jpg', alt='13-ibtmedia logo')
+					.col-xs-4.col-md-3
+						img.network-logo(src='/images/network-placeholder.png', data-src='/images/logos/14-indiatoday.jpg', alt='14-indiatoday logo')
+					.col-xs-4.col-md-3
+						img.network-logo(src='/images/network-placeholder.png', data-src='/images/logos/15-theindianexpress.jpg', alt='15-theindianexpress logo')
+					.col-xs-4.col-md-3
+						img.network-logo(src='/images/network-placeholder.png', data-src='/images/logos/16-itvarnews.jpg', alt='16-itvarnews logo')
+					.col-xs-4.col-md-3
+						img.network-logo(src='/images/network-placeholder.png', data-src='/images/logos/40-thatscoop.jpg', alt='40-thatscoop logo')
+				.row.tac.publishers-list
+					.col-xs-4.col-md-3
+						img.network-logo(src='/images/network-placeholder.png', data-src='/images/logos/18-outlook.jpg', alt='18-outlook logo')
+					.col-xs-4.col-md-3
+						img.network-logo(src='/images/network-placeholder.png', data-src='/images/logos/19-beautyglimpse.jpg', alt='19-beautyglimpse logo')
+					.col-xs-4.col-md-3
+						img.network-logo(src='/images/network-placeholder.png', data-src='/images/logos/20-mw.jpg', alt='20-mw logo')
+					.col-xs-4.col-md-3
+						img.network-logo(src='/images/network-placeholder.png', data-src='/images/logos/21-nativeplanet.jpg', alt='21-nativeplanet logo')
+					.col-xs-4.col-md-3
+						img.network-logo(src='/images/network-placeholder.png', data-src='/images/logos/22-womensweb.jpg', alt='22-womensweb logo')
+					.col-xs-4.col-md-3
+						img.network-logo(src='/images/network-placeholder.png', data-src='/images/logos/23-oneindia.jpg', alt='23-oneindia logo')
+					.col-xs-4.col-md-3
+						img.network-logo(src='/images/network-placeholder.png', data-src='/images/logos/24-outlooktraveller.jpg', alt='24-outlooktraveller logo')
+					.col-xs-4.col-md-3
+						img.network-logo(src='/images/network-placeholder.png', data-src='/images/logos/25-rollingstone.jpg', alt='25-rollingstone logo')
+					.col-xs-4.col-md-3
+						img.network-logo(src='/images/network-placeholder.png', data-src='/images/logos/26-shine.jpg', alt='26-shine logo')
+					.col-xs-4.col-md-3
+						img.network-logo(src='/images/network-placeholder.png', data-src='/images/logos/27-sifyhealth.jpg', alt='27-sifyhealth logo')
+					.col-xs-4.col-md-3
+						img.network-logo(src='/images/network-placeholder.png', data-src='/images/logos/28-smartphotography.jpg', alt='28-smartphotography logo')
+					.col-xs-4.col-md-3
+						img.network-logo(src='/images/network-placeholder.png', data-src='/images/logos/29-idealhome.jpg', alt='29-idealhome logo')
+					.col-xs-4.col-md-3
+						img.network-logo(src='/images/network-placeholder.png', data-src='/images/logos/30-beautyindia.jpg', alt='30-beautyindia logo')
+					.col-xs-4.col-md-3
+						img.network-logo(src='/images/network-placeholder.png', data-src='/images/logos/30-beautyindia.jpg', alt='31-cosmopolitan logo')
+					.col-xs-4.col-md-3
+						img.network-logo(src='/images/network-placeholder.png', data-src='/images/logos/32-headlinestoday.jpg', alt='32-headlinestoday logo')
+				.row.tac.publishers-list
+					.col-xs-4.col-md-3
+						img.network-logo(src='/images/network-placeholder.png', data-src='/images/logos/33-indiahospitalityreview.jpg', alt='33-indiahospitalityreview logo')
+					.col-xs-4.col-md-3
+						img.network-logo(src='/images/network-placeholder.png', data-src='/images/logos/34-indiadigitalreview.jpg', alt='34-indiadigitalreview logo')
+					.col-xs-4.col-md-3
+						img.network-logo(src='/images/network-placeholder.png', data-src='/images/logos/35-indiatourismreview.jpg', alt='35-indiatourismreview logo')
+					.col-xs-4.col-md-3
+						img.network-logo(src='/images/network-placeholder.png', data-src='/images/logos/36-indiatodaygg.jpg', alt='36-indiatodaygg logo')
+					.col-xs-4.col-md-3
+						img.network-logo(src='/images/network-placeholder.png', data-src='/images/logos/37-indiacioreview.jpg', alt='37-indiacioreview logo')
+					.col-xs-4.col-md-3
+						img.network-logo(src='/images/network-placeholder.png', data-src='/images/logos/38-menshealth.jpg', alt='38-menshealth logo')
+					.col-xs-4.col-md-3
+						img.network-logo(src='/images/network-placeholder.png', data-src='/images/logos/39-readersdigest.jpg', alt='39-readersdigest logo')
+	include ../layouts/footer

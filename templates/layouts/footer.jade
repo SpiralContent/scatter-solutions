@@ -1,0 +1,84 @@
+#about
+	.container
+		.row
+			.col-md-4.col-md-push-4.tac.mb
+				img(src='/images/logo.png', alt='')
+			.col-md-4.col-md-pull-4.tac
+				img.hidden-xs(src='/images/i-about.png', alt='')
+				p.brief-text Scatter is the first product from Spiral Content Solutions Pvt. Ltd. Our team boasts of several years of varied experience across firms like MTV, Blackstone and BBC etc. We believe this is a great time to realize our collective dream of creating exceptional content experiences by connecting content creators to brands.
+			.col-md-4.tac
+				img.hidden-xs(src='/images/i-connect.png', alt='')
+				p.brief-text From former media executives to fresh graduates, our team is a great balance of experience &amp; new blood. Our shared love and vision for digital marketing brings us together. Our ambition is to create &ldquo;simple to use&rdquo; products that help brands connect with their audiences.
+				p
+					a.linkedin-link(target='_blank', href='http://www.linkedin.com/company/spiral-content-solutions') CONNECT ON LINKEDIN
+#interact.section
+	.container
+		.row
+			.col-md-6.col-md-push-6
+				.scatter-links.tac
+					a.scatter-link.scatter-link-facebook(href='https://www.facebook.com/pages/Spiral-Content-Solutions-Pvt-Ltd/1534191826828446?ref=hl', target='_blank')
+					a.scatter-link.scatter-link-twitter(href='https://twitter.com/spiralcontent', target='_blank')
+					a.scatter-link.scatter-link-linkedin(href='http://www.linkedin.com/company/spiral-content-solutions', target='_blank')
+					a.scatter-link.scatter-link-googleplus(href='https://plus.google.com/111365358324408730701', target='_blank')
+					a.scatter-link.scatter-link-slideshare(href='http://www.slideshare.net/spiralcontent', target='_blank')
+					a.scatter-link.scatter-link-pinterest(href='https://www.pinterest.com/spiralcontent/', target='_blank')
+			#contact.col-md-6.col-md-pull-6
+				.form
+					h2.hd-2 Contact us
+					form(action='http://www.spiral.media/sendmail/', method='POST')
+						.row.mb
+							.col-xs-6
+								input.form-control(type='text', required='', name='first_name', placeholder='First Name')
+							.col-xs-6
+								input.form-control(type='text', required='', name='last_name', placeholder='Last Name')
+						.row.mb
+							.col-xs-6
+								input.form-control(type='text', required='', name='phone', placeholder='Phone Number')
+							.col-xs-6
+								input.form-control(type='email', required='', name='email', placeholder='E-Mail')
+						.row.mb
+							.col-xs-6
+								input.form-control(type='text', required='', name='company', placeholder='Company')
+							.col-xs-6
+								input.form-control(type='text', required='', name='job_function', placeholder='Job Function')
+						textarea.form-control.mb(name='message', rows='5', placeholder='Message')
+						.row
+							.col-md-6.col-md-offset-6
+								input.btn.btn-tertiary.btn-block(type='submit', value='Say hello')
+						input(type='hidden', name='redirect_url', value='/publishers/#thanks')
+#thanks
+	.container.tac
+		p Thanks for subscribing! Get ready to engage unfoolishly.
+#footer.hidden-xs
+	.container.tac.footer-links
+		p
+			a(href='/advertisers') information for advertisers - 
+			a(href='/files/scatter-advertiser-faqs.pdf', target='_blank') FAQs for advertisers - 
+			a(href='/publishers') information for publishers - 
+			a(href='/files/scatter-publisher-faqs.pdf', target='_blank') FAQs for publishers - 
+			a(href='/knowledge') knowledge &amp; resource center
+		p Copyright &copy; 2014 Spiral Content Pvt Ltd
+
+script(src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js')
+script(src='/js/bootstrap.min.js')
+script(src='/js/jquery.pin.js')
+script(src='//cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/20140415/jquery.cycle2.min.js')
+script(src='https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js')
+script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/20140415/jquery.cycle2.swipe.min.js')
+script(src='/js/is.min.js')
+script(src='//cdnjs.cloudflare.com/ajax/libs/unveil/1.3.0/jquery.unveil.min.js')
+script(src='/js/scatter.js')
+script.
+	(function (i, s, o, g, r, a, m) {
+		i['GoogleAnalyticsObject'] = r;
+		i[r] = i[r] || function () {
+					(i[r].q = i[r].q || []).push(arguments)
+				}, i[r].l = 1 * new Date();
+		a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0];
+		a.async = 1;
+		a.src = g;
+		m.parentNode.insertBefore(a, m)
+	})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+	ga('create', 'UA-59574487-1', 'scatter.solutions');
+	ga('send', 'pageview');                                                                     
